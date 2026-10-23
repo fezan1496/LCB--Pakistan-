@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LCB Pakistan</title>
+</head>
+<body style="font-family:sans-serif;padding:20px;background:#f8fafc">
+<h1>LCB - Life Changing Business</h1>
+<p>A clear, responsible first step. No promises, just a clear next step.</p>
+<div style="background:white;padding:20px;border-radius:16px;margin-top:20px">
+<h3>Apna Business Page Banao</h3>
+<input id="bname" placeholder="Business naam likhen" style="width:100%;padding:12px;border-radius:8px;border:1px solid #ddd">
+<button onclick="make()" style="width:100%;padding:14px;background:#111;color:white;border-radius:12px;margin-top:10px">Mera Link Banao</button>
+<p id="out" style="color:#555;margin-top:10px"></p>
+</div>
+<script>
+function make(){
+let n=document.getElementById('bname').value;
+if(!n){alert('Naam likhen');return;}
+document.getElementById('out').innerText='Aapka link tayar hai: lcb.pk/'+n.replace(/\s+/g,'-');
+}
+</script>
+</body>
+</html>
